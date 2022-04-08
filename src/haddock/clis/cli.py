@@ -32,6 +32,7 @@ ap.add_argument(
     )
 
 add_restart_arg(ap)
+add_continue_arg(ap)
 
 ap.add_argument(
     "--setup",
@@ -64,6 +65,7 @@ def main(
         recipe,
         restart=None,
         setup_only=False,
+        continue=True,
         log_level="INFO",
         ):
     """
