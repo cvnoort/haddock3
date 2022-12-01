@@ -6,7 +6,7 @@ Once you have [cloned the HADDOCK3 repository](INSTALL.md), please follow these 
 ## 1 Download CNS
 
 Downloading CNS requires a license, which academic users can [request for free](http://cns-online.org/cns_request/). You will be sent a password for the download via e-mail.
-Using the link provided in the same e-mail, download CNS ("Source installer (compilation required on your system)") to the directory in which you want to install it (for example `software`). Navigate to this directory, then uncompress and extract the archive:
+Using the link provided in the same e-mail, download CNS ("Source installer (compilation required on your system)") to the directory in which you want to install it (e.g. `software`). Navigate to this directory, then uncompress and extract the archive:
 
 ```bash
 cd ~/software/
@@ -20,7 +20,7 @@ Go to the CNS directory:
 cd cns_solve_1.3
 ```
 
-If you are using csh/tcsh, edit `cns_solve_env` to point to the correct location (the current directory):
+If you are using csh/tcsh, edit `cns_solve_env` to point to the correct location (the current directory, e.g. `~/software/cns_solve_1.3`):
 
 ```
 # CHANGE THE NEXT LINE TO POINT TO THE LOCATION OF THE CNSsolve DIRECTORY
@@ -142,8 +142,8 @@ If a suitable compiler is installed but no corresponding `Makefile.header` is fo
 Error: Makefile template for compiler gfortran is not available
 ```
 
-Makefile headers for each supported system-compiler combination are provided in `instlib/machine/supported/` (for unsupported systems, see `instlib/machine/unsupported/`). If you already tried `make install`, the appropriate directory for your system (eg. `mac-intel-darwin`) will have been copied to the main `cns_solve_1.3` directory.
-If this directory does not contain the desired file (eg. `Makefile.header.2.gfortran`), you can create one manually.
+Makefile headers for each supported system-compiler combination are provided in `instlib/machine/supported/` (for unsupported systems, see `instlib/machine/unsupported/`). If you already tried `make install`, the appropriate directory for your system (e.g. `mac-intel-darwin`) will have been copied to the main `cns_solve_1.3` directory.
+If this directory does not contain the desired file (e.g. `Makefile.header.2.gfortran`), you can create one manually.
 
 For example, for `gfortran`, create a new file named `Makefile.header.6.gfortran` inside the directory containing Makefile headers for your system. Save the following lines in this file:
 
